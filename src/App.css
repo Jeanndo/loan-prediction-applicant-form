@@ -1,0 +1,237 @@
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loan-container{
+
+}
+.analysis-design{
+ background-image:url("https://cdn.pixabay.com/photo/2018/07/15/11/31/online-3539421_960_720.png");
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ width: 681px;
+ height: 250px;
+ margin:50px 50px 50px 300px;
+}
+
+.form-name{
+  width: 50%;
+}
+.applicant-profile{
+  width: 50%;
+}
+.form-name,.applicant-profile{
+  height: 10vh;
+}
+.form-name-title{
+position: absolute;
+top:15px;
+/* width: 661px; */
+height: 52px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #FFFFFF;
+}
+.applicant-profile-picture img{
+position: absolute;
+width: 47px;
+height: 47px;
+left: 1000px;
+top:10px;
+border-radius: 100px;
+}
+.applicant-name{
+position: absolute;
+height: 15px;
+left: 1060px;
+top: 20px;
+font-family: Ruluko;
+font-style: normal;
+font-weight:400;
+font-size: 13px;
+line-height: 15px;
+color: #FFFFFF;
+}
+.logout-btn{
+position: absolute;
+width: 101px;
+height: 31px;
+left: 1200px;
+top: 10px;
+background: #499DEB;
+border-radius: 20px;
+outline: none;
+border-style:none;
+color: #FFFFFF;
+cursor: pointer;
+}
+.applicant-details-heading{
+height: 31px;
+font-family: Ruluko;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+text-align: center;
+}
+.form-fields-contents{
+position: absolute;
+top: 600px;
+width: 100%;
+}
+
+.submit-btn-container{
+ background-color: greenyellow;
+}
+.submit-btn{
+  position: absolute;
+  left: 550px;
+  top: 1150px;
+  background: #499DEB;
+  border-radius: 30px;
+  width:110px;
+  height: 40px;
+  color:#FFFFFF;
+  border-style: none;
+  cursor: pointer;
+}
+.cancel-btn{
+  position: absolute;
+  left: 750px;
+  top: 1150px;
+  background: #EB4970;
+  border-radius: 30px;
+  width:110px;
+  height: 40px;
+  color:#FFFFFF;
+  border-style: none;
+  cursor: pointer;
+}
+.form-fields-contents{
+ 
+}
+
+.loan_application_form_container{
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+.Navigation-bar{
+  background: #8cc8f0;
+  height: 10vh;
+}
+.Top-navigation{
+  height: 80vh;
+  padding: 40px 0px 0px 0px;
+  position: absolute;
+  width: 100%;
+  height: 430px;
+  background: linear-gradient(180deg, rgba(79, 174, 243, 0.76) 0%, rgba(99, 178, 236, 0.4104) 61.46%, rgba(99, 178, 236, 0) 92.71%);
+  border-radius: 5px;
+}
+.bottom-part{
+ background-color:rgba(235, 235, 235, 0.137);
+ margin-top: 400px;
+ /* height: 90vh; */
+}
+.Form-fields-container{
+
+}
+form{
+  background-color:#FFFFFF;
+ padding: 0px 50px 0px 50px;
+ height: 90vh;
+ margin: 50px 300px 0px 300px;
+
+}
+
+input[type="text"]{
+  width:100%;
+  height:30px;
+  outline-style: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input[type="date"]{
+  width:100%;
+  height:30px;
+  outline-style: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+select{
+  width:100%;
+  height:30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+input[type="email"]{
+  width:100%;
+  height:30px;
+  outline-style: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+input[type="number"]{
+  width:100%;
+  height:30px;
+  outline-style: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+label{
+font-family: Ruluko;
+float:left;
+margin-bottom: 5px;
+}
+
+.form-header{
+font-family: Ruluko;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+}
