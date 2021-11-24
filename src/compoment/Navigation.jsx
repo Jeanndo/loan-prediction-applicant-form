@@ -5,7 +5,7 @@ import Container from "react-bootstrap/Container";
 
 const Navigation = () => {
   return (
-    <Navbar fixed="top">
+    <Navbar fixed="top" className="Navigation-bar">
       <Container>
         <Navbar.Brand href="#home">
           <h1 className="form-name-title">Loan applicant form</h1>
