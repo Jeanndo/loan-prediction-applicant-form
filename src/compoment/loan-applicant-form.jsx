@@ -128,7 +128,6 @@ const ApplicantForm = () => {
                     </label>
                     <br />
                     <input
-                      type="text"
                       required
                       type="email"
                       id="email"

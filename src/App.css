@@ -86,9 +86,8 @@ height: 15px;
 left: 1060px;
 top: 20px;
 font-family: Ruluko;
-font-style: normal;
 font-weight:400;
-font-size: 13px;
+font-size: 16px;
 line-height: 15px;
 color: #FFFFFF;
 }
@@ -127,7 +126,7 @@ width: 100%;
 .submit-btn{
   position: absolute;
   left: 550px;
-  top: 1150px;
+  top: 1170px;
   background: #499DEB;
   border-radius: 30px;
   width:110px;
@@ -139,7 +138,7 @@ width: 100%;
 .cancel-btn{
   position: absolute;
   left: 750px;
-  top: 1150px;
+  top: 1170px;
   background: #EB4970;
   border-radius: 30px;
   width:110px;
@@ -234,4 +233,5 @@ font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 28px;
+text-align: center;
 }
