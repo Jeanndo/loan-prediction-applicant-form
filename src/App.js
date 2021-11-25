@@ -1,11 +1,11 @@
+import MyRoutes from './routes';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
-import LoanForm from './compoment/loan-applicant-form'
-
 const App = ()=> {
   return (
-    <div className="App">
-       <LoanForm/>
-    </div>
+    <BrowserRouter>
+     <MyRoutes/>
+    </BrowserRouter>
   );
 }
 
