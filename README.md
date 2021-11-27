@@ -8,5 +8,6 @@ Applicant form for getting applicant information needed by the model to check if
 
 # APPLICATION FORM
 ![image](https://user-images.githubusercontent.com/59208992/143299950-f64e39a9-d17c-4081-8b8d-937c1a857080.png)
+# CHECKING ELIGIBILITY
 ![image](https://user-images.githubusercontent.com/59208992/143300152-cbb8bf16-97d7-4d8d-9171-a7a4f0970fbf.png)
 
