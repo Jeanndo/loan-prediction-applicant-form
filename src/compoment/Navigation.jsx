@@ -30,7 +30,7 @@ const Navigation = () => {
             </div>
           </Navbar.Text>
           <Navbar.Text>
-            <button onClick={handleLogout} className="logout-btn">logout</button>
+            <button onClick={handleLogout} className="logout-btn">Logout</button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

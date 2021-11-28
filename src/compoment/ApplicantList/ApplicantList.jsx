@@ -59,7 +59,7 @@ const ApplicantList = () => {
                   title={<a href="https://ant.design">{item.name.last}</a>}
                   description={item.email}
                 />
-                <div>Approved</div>
+                <div>Approved ✔️</div>
               </List.Item>
             )}
           />

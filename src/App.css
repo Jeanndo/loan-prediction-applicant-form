@@ -440,7 +440,7 @@ label {
 .Applicant-list {
   position: relative;
   width: 100%;
-  height: 1200px;
+  height:100vh;
   padding: 100px;
   background-image: linear-gradient(
     180deg,
