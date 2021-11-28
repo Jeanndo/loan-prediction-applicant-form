@@ -47,20 +47,20 @@ const ApplicantForm = () => {
 
   return (
     <>
-        <div className="loan_application_form_container">
-          <div className="Top-navigation">
-            <Navigation />
-            <div className="analysis-design">&nbsp;</div>
-          </div>
-          <div className="bottom-part">
-      {isModalVisible?(
+      <div className="loan_application_form_container">
+        <div className="Top-navigation">
+          <Navigation />
+          <div className="analysis-design">&nbsp;</div>
+        </div>
+        <div className="bottom-part">
+          {isModalVisible ? (
             <Spin
               size="large"
               tip="Checking Please wiat for our system ..."
-              // style={{ marginLeft: "50px" }}
+              style={{ marginLeft: "500px" }}
               className="spinner"
             />
-          ) :(
+          ) : (
             <div className="Form-fields-container">
               <h1 className="form-header">Applicant Details</h1>
               <form onSubmit={handleSubmit}>
@@ -329,8 +329,8 @@ const ApplicantForm = () => {
               </svg>
             </div>
           )}
-          </div>
         </div>
+      </div>
     </>
   );
 };

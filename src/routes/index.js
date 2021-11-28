@@ -5,6 +5,7 @@ import {
   } from "react-router-dom";
 import ApplicationForm from '../compoment/loan-applicant-form'
 import Landing from "../compoment/Landing/Landing";
+import Signup from "../compoment/Auth/Signup";
 
 class MyRoutes extends React.Component {
     render() {
@@ -12,6 +13,7 @@ class MyRoutes extends React.Component {
         <Routes> 
            <Route exact path="/" element={<Landing/>}/>
            <Route exact path="/applicant_form" element={<ApplicationForm/>}/>
+           <Route exact path="/signup" element={<Signup/>}/>
         </Routes>
     );
    }

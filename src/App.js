@@ -1,13 +1,12 @@
-import MyRoutes from './routes';
-import { BrowserRouter } from 'react-router-dom';
-import './App.css';
-const App = ()=> {
+import MyRoutes from "./routes";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+const App = () => {
   return (
     <BrowserRouter>
-     <MyRoutes/>
+      <MyRoutes />
     </BrowserRouter>
-    
   );
-}
+};
 
 export default App;
