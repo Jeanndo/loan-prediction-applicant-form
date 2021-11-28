@@ -313,7 +313,7 @@ const ApplicantForm = () => {
 
                 <div>
                   <button className="submit-btn" type="submit">
-                    Submit
+                    Predict
                   </button>
                   <button className="cancel-btn" type="reset">
                     Cancel

@@ -2,8 +2,16 @@ import React from "react";
 import ApplicantPic from "../assets/jadoo.png";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
+import { useNavigate } from "react-router-dom";
 
 const Navigation = () => {
+
+  const navigate = useNavigate();
+  
+  const handleLogout = ()=>{
+    navigate("/");
+  }
+
   return (
     <Navbar fixed="top" className="Navigation-bar">
       <Container>
@@ -22,7 +30,7 @@ const Navigation = () => {
             </div>
           </Navbar.Text>
           <Navbar.Text>
-            <button className="logout-btn">logout</button>
+            <button onClick={handleLogout} className="logout-btn">Logout</button>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>

@@ -36,7 +36,7 @@
     transform: rotate(360deg);
   }
 }
-body{
+body {
   font-family: Ruluko;
 }
 .analysis-design {
@@ -102,6 +102,10 @@ body{
   border-style: none;
   color: #ffffff;
   cursor: pointer;
+  font-family: Ruluko;
+}
+.logout-btn:hover {
+  background-color: orange;
 }
 .applicant-details-heading {
   height: 31px;
@@ -119,9 +123,6 @@ body{
   width: 100%;
 }
 
-.submit-btn-container {
-  background-color: greenyellow;
-}
 .submit-btn {
   position: absolute;
   left: 550px;
@@ -133,6 +134,10 @@ body{
   color: #ffffff;
   border-style: none;
   cursor: pointer;
+  font-family: Ruluko;
+}
+.submit-btn:hover {
+  background-color: orange;
 }
 .cancel-btn {
   position: absolute;
@@ -145,8 +150,7 @@ body{
   color: #ffffff;
   border-style: none;
   cursor: pointer;
-}
-.form-fields-contents {
+  font-family: Ruluko;
 }
 
 .loan_application_form_container {
@@ -176,8 +180,7 @@ body{
   margin-top: 400px;
   /* height: 90vh; */
 }
-.Form-fields-container {
-}
+
 form {
   background-color: #ffffff;
   padding: 0px 50px 0px 50px;
@@ -282,9 +285,9 @@ label {
   border-radius: 50px;
   background-color: #ffffff;
 }
-.landing-page-nav-right-contents .login-btn:hover{
-  background-color:orange;
-  color:#FFFFFF;
+.landing-page-nav-right-contents .login-btn:hover {
+  background-color: orange;
+  color: #ffffff;
 }
 .landing-page-nav-right-contents .signup-btn {
   position: absolute;
@@ -298,7 +301,7 @@ label {
   color: #ffffff;
   font-family: Ruluko;
 }
-.landing-page-nav-right-contents .signup-btn:hover{
+.landing-page-nav-right-contents .signup-btn:hover {
   background-color: orange;
 }
 .landing-page-banner {
@@ -350,7 +353,7 @@ label {
   display: flex;
   flex-direction: column;
 }
-.langing-project-description-card .card-one .card-one-part-one{
+.langing-project-description-card .card-one .card-one-part-one {
   padding: 50px;
 }
 
@@ -392,17 +395,17 @@ label {
   display: flex;
   flex-direction: column;
 }
-.langing-project-description-card .card-two .card-two-part-one{
+.langing-project-description-card .card-two .card-two-part-one {
   padding: 50px;
 }
 .langing-project-description-card .card-two .card-two-part-two {
   height: 100vh;
   background-image: linear-gradient(
-    180deg,
-    rgba(79, 174, 243, 0.76) 100%,
-    rgba(99, 178, 236, 0.4104) 100%,
-    rgba(99, 178, 236, 0) 100%
-  ),
+      180deg,
+      rgba(79, 174, 243, 0.76) 100%,
+      rgba(99, 178, 236, 0.4104) 100%,
+      rgba(99, 178, 236, 0) 100%
+    ),
     url("./assets/card2.jpg");
   background-position: center;
   background-size: cover;
@@ -413,8 +416,8 @@ label {
   font-size: 17px;
   font-family: Ruluko;
 }
-.card-one-part-two p{
-  color: white ;
+.card-one-part-two p {
+  color: white;
   text-align: center;
 }
 .get-started-btn {
@@ -427,8 +430,22 @@ label {
   color: #ffffff;
   font-family: Ruluko;
 }
-.get-started-btn:hover{
-background-color: orange;
+.get-started-btn:hover {
+  background-color: orange;
 }
 
 /*****AUTHENTICATION*****/
+
+/******APPLICANT LIS*********/
+.Applicant-list {
+  position: relative;
+  width: 100%;
+  height:100vh;
+  padding: 100px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(79, 174, 243, 0.76) 100%,
+    rgba(99, 178, 236, 0.4104) 100%,
+    rgba(99, 178, 236, 0) 100%
+  );
+}

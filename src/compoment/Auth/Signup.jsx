@@ -1,5 +1,7 @@
 import React from "react";
 import { Form, Input, InputNumber, Button } from "antd";
+import { useNavigate } from 'react-router-dom';
+
 const layout = {
   labelCol: {
     span: 4,
@@ -25,8 +27,11 @@ const validateMessages = {
 /* eslint-enable no-template-curly-in-string */
 
 const Signup = () => {
+  
+  const navigate = useNavigate()
   const onFinish = (values) => {
     console.log(values);
+    navigate("/applicant_form");
   };
 
   return (
