@@ -273,7 +273,7 @@ label {
   border-style: none;
   left: 950px;
   top: 70px;
-  font-family: Mulish;
+  font-family: Ruluko;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -296,6 +296,7 @@ label {
   background: #499deb;
   border-radius: 50px;
   color: #ffffff;
+  font-family: Ruluko;
 }
 .landing-page-nav-right-contents .signup-btn:hover{
   background-color: orange;
@@ -327,7 +328,7 @@ label {
 }
 .landing-page-banner .landing-page-inner-banner h2 {
   color: #000000;
-  font-family: Merriweather;
+  font-family: Ruluko;
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
@@ -429,3 +430,5 @@ label {
 .get-started-btn:hover{
 background-color: orange;
 }
+
+/*****AUTHENTICATION*****/
