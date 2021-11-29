@@ -3,14 +3,29 @@ import ApplicantPic from "../assets/jadoo.png";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
+import {connect} from "react-redux";
+import {message} from "antd";
+import {Logout as Siginout} from '../Redux/actions/AuthAction';
 
-const Navigation = () => {
+const Navigation = ({Siginout,logout}) => {
 
   const navigate = useNavigate();
   
-  const handleLogout = ()=>{
+  const handleLogout = async ()=>{
+    await Siginout();
     navigate("/");
+    
   }
+
+  // React.useEffect(() => {
+  //   if (logout.error) {
+  //     message.error(logout.error);
+  //   }
+  //   if (logout.success) {
+  //     message.success("user successfully logged out ");
+  //     navigate("/");
+  //   }
+  // }, [logout]);
 
   return (
     <Navbar fixed="top" className="Navigation-bar">
@@ -37,5 +52,8 @@ const Navigation = () => {
     </Navbar>
   );
 };
-
-export default Navigation;
+const mapStateToProps = ({LogoutReducer})=>{
+  const {logout} = {LogoutReducer}
+  return {logout} 
+}
+export default connect(mapStateToProps,{Siginout})(Navigation);
