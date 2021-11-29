@@ -25,7 +25,7 @@ const Navigation = () => {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             <div className="applicant-profile-picture">
-              <img src={`${ApplicantPic}`} alt="applicant-picture" />
+              <img src={`${ApplicantPic}`} alt="applicant-profile-pic" />
               <label className="applicant-name">Jean De Dieu</label>
             </div>
           </Navbar.Text>

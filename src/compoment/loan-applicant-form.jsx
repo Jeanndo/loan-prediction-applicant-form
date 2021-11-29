@@ -1,7 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import { Row, Col } from "antd";
-import { Modal, Spin, Space } from "antd";
+import { Row, Col, Spin } from "antd";
 
 const ApplicantForm = () => {
   const [sex, setSex] = React.useState("");
@@ -56,7 +55,7 @@ const ApplicantForm = () => {
           {isModalVisible ? (
             <Spin
               size="large"
-              tip="Checking Please wiat for our system ..."
+              tip="Checking eligibility, Please wiat for our system ..."
               style={{ marginLeft: "500px" }}
               className="spinner"
             />
