@@ -1,6 +1,11 @@
 import React from "react";
 import { Form, Input,Button } from "antd";
 import { useNavigate } from 'react-router-dom';
+import {connect} from 'react-redux';
+import {message} from "antd";
+
+import {Login as signIn,GoogleLogin} from "../../Redux/actions/AuthAction";
+
 const layout = {
   labelCol: {
     span: 4,
@@ -21,19 +26,38 @@ const validateMessages = {
 };
 /* eslint-enable no-template-curly-in-string */
 
-const Signup = () => {
+const Signup = ({signIn,login,GoogleLogin,google}) => {
 
   const navigate = useNavigate()
 
-  const onFinish = (values) => {
-    console.log(values);
-    navigate("/applicant_form");
+  const onFinish = async (values) => {
+    // console.log(values);
+    await signIn(values);
   };
+  const handleGoogle = async ()=>{
+      await GoogleLogin()
+  }
 
-  // const handleLogin = ()=>{
-   
-  // }
+  React.useEffect(() => {
+    if (login.error) {
+      message.error(login.error);
+    }
+    if (login.success) {
+      message.success("user successfully logged in");
+      navigate("/applicant_form");
+    }
+    if (google.error) {
+      message.error(google.error);
+    }
+    if (google.success) {
+      message.success("user successfully logged in");
+      navigate("/applicant_form");
+    }
+  }, [login,google]);
 
+  console.log("logged in user",login.message);
+  console.log("googel user",google.message);
+  
   return (
 
 
@@ -51,7 +75,7 @@ const Signup = () => {
     >
       
       <Form.Item
-        name={["user", "email"]}
+        name="email"
         label="Email"
         rules={[
           {
@@ -63,7 +87,7 @@ const Signup = () => {
       </Form.Item>
 
       <Form.Item
-        name={["user", "password"]}
+        name="password"
         label="Password"
         rules={[
           {
@@ -76,12 +100,22 @@ const Signup = () => {
       </Form.Item>
      
       <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
+        <Button type="primary" htmlType="submit"
+        loading={login.loading}
+        >
           Login
         </Button>
       </Form.Item>
+      <hr/>
+      <Button type="primary"onClick={handleGoogle} 
+      loading={google.loading}
+      >Google Login</Button>
     </Form>
   );
 };
-
-export default Signup;
+const mapStateToProps = ({loginReducer,googleReducer})=>{
+  const {login} = loginReducer;
+  const  { google} = googleReducer;
+  return {login, google}
+}
+export default connect(mapStateToProps,{signIn,GoogleLogin})(Signup);
